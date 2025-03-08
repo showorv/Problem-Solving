@@ -13,10 +13,10 @@ bool checkEqual(int a[26], int b[26]){
 }
 bool permatution ( string s1, string s2){
 
-    int count1[26] = {0};
+    int count1[26] = {0}; //26 because of a-z has 26letters
     // character count array
-    for( int i =0; i<s1.length(); i++){
-        int index = s1[i] - 'a';
+    for( int i =0; i<s1.length(); i++){ //! s1.length() is a frequency of char
+        int index = s1[i] - 'a'; // char-char = ascii value. 
         count1[index]++;
     }
 
